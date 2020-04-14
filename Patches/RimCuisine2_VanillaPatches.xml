@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+	<!-- Biomes Stuff -->
+	
+	<!-- Patches in crops to wild biomes.  Crops with excessive .0000's represent plants that are growable
+		in that biome, but don't actually show up except possibly on super rare you-should-buy-a-lottery-ticket occasions. 
+		Having them all right here helps to make making changes easier and lets modders see what spawns/grows where. 
+		All plants have the 'must be wild to sow' tag in order to make this work properly, unless of course they're meant to be grown in any biome.-->
+	<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+	<li Class="PatchOperationAdd">
+      <xpath>/Defs/BiomeDef[defName = "TemperateSwamp"]/wildPlants</xpath>
+      <value>
+        <Plant_MarroFlesh>0.0000000000000001</Plant_MarroFlesh>
+		<Morrotree>0.0000000000000001</Morrotree>
+      </value>
+    </li>
+	<li Class="PatchOperationAdd">
+      <xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildPlants</xpath>
+      <value>
+        <Plant_MarroFlesh>0.0000000000000001</Plant_MarroFlesh>
+		<Morrotree>0.0000000000000001</Morrotree>
+      </value>
+    </li>
+	<li Class="PatchOperationAdd">
+      <xpath>/Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants</xpath>
+      <value>
+		<Plant_MarroFlesh>0.0000000000000001</Plant_MarroFlesh>
+		<Morrotree>0.0000000000000001</Morrotree>
+      </value>
+    </li>
+	<li Class="PatchOperationAdd">
+      <xpath>/Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants</xpath>
+      <value>
+		<Plant_MarroFlesh>0.0000000000000001</Plant_MarroFlesh>
+		<Morrotree>0.0000000000000001</Morrotree>
+      </value>
+    </li>
+  </operations>
+	</Operation>
+	
+	
+	
+	
+	
+</Patch>
+
